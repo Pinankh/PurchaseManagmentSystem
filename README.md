@@ -1,6 +1,6 @@
 # PurchaseManagmentSystem
 Purchase Management System for Zambia A Java Swing and SQLite-based system for managing purchases, calculating Zambian taxes, and generating PDF reports. Features include automated tax calculations, supplier and purchase tracking, and structured PDF reports for tax submissions and audits, ideal for small to medium-sized businesses.
-This Purchase Management System built in the form of a GUI desktop application developed in ***Java*** using ***MySQL*** as its database.
+This Purchase Management System built in the form of a GUI desktop application developed in ***Java*** using ***SQLite*** as its database.
 The GUI was designed using **Swing** and the database connectivity was managed using **JDBC API**.
 
 
@@ -54,15 +54,6 @@ The landing page of the application after a successful login.
 
 ![welcome](screenshots/welcome.png)
 
-### Products
-
-The products section allows the user to add, edit and delete products from the store's inventory.
-
-![products](screenshots/products.png)
-
-### Current Stock
-
-This section allows the user to check the availability of every item.
 
 ![stock](screenshots/stock.png)
 
@@ -72,18 +63,18 @@ Here, the user can manage and manipulate the record of all the suppliers associa
 
 ![suppliers](screenshots/suppliers.png)
 
-### Customers
+### Due Date
 
-Allows user to add new customers or update/delete existing customers in the database.
+Allows user to see the due payment to purchased by supplier.
 
-![customers](screenshots/customers.png)
+![customers](screenshots/due_payment.png)
 
-### Sales
+### Already Payed data
 
-This section is where users can sell a product and manage all the sales transactions. 
-The user only needs to enter the customer and product code and the software will handle the rest, showing all the necessary details like available stock and selling price of the product. 
+This section is where users can see the data of already paid the payment to supplier.
+The user only needs to select the supplier and software will handle the rest, showing all the necessary details like which purchase orders payed. 
 
-![sales](screenshots/sales.png)
+![sales](screenshots/payed.png)
 
 ### Purchase
 
@@ -91,17 +82,17 @@ This section is where users can view purchase logs and enter new purchase transa
 
 ![purchase](screenshots/purchase.png)
 
-### Users
+### Purchase Reports
 
-This section is only available to **ADMINISTRATORS**. It allows them to view, add and delete any users.
+This section is genrate purchase reports by filteration such as like between date wise and Supplire wise.
 
-![users](screenshots/users.png)
+![users](screenshots/purchaserpt.png)
 
-### User Logs
+### TAX & VAT For Zambia
 
-Stores and shows the administrator a log of all the users that have previously logged in, including their login time and logout time.
+Tax & Vat shows the administrator a Calculated and selected Purchashase products in Genrate Report for submission
 
-![logs](screenshots/logs.png)
+![logs](screenshots/taxvat.png)
 
 ***
 
@@ -110,14 +101,9 @@ Stores and shows the administrator a log of all the users that have previously l
 The following are the technologies that have been used in the development of this project. All of them are free to use.
   - JetBrains IntelliJ IDE
   - Apache NetBeans IDE (for the GUI designer)
-  - MySQL Server and Workbench
+  - MySQL Server and Workbench and SQLite
   - JDK 16
 
-## ER Diagram
-
-The ER diagram for the sample schema that has been used in the application.
-
-![erdiag](screenshots/ERDiagram.png)
 
 ## Source Code
 
